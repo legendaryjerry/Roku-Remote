@@ -10,5 +10,8 @@ Simple, mobile-friendly Roku remote webUI using jQuery
 * More about Roku here: https://www.roku.com
 * API Docs: http://sdkdocs.roku.com/display/sdkdoc/External+Control+Guide
 * I am not affiliated with roku.
-* **Task**: Use an IP variable instead of hard-coding the IP 50 times.
-* **Task**: Use API text search functionality (would be great on mobile w/ Swype).
+
+## Tasks
+* Use an IP variable instead of hard-coding the IP 50 times.
+* Use API text search functionality (would be great on mobile w/ Swype).
+* Link to common Apps
