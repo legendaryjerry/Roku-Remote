@@ -101,7 +101,7 @@ $("Pandora").click(function(){
     $.post(IPADDR + "/launch/11?contentID=28"); 
     setTimeout(function() {
     $.post(IPADDR + "/keypress/Select");
-    }, 1000);  
+    }, 2000);  
     });
 
 /// Load and Launch Netflix App    
@@ -109,7 +109,7 @@ $("Netflix").click(function(){
     $.post(IPADDR + "/launch/11?contentID=12");
     setTimeout(function() {
     $.post(IPADDR + "/keypress/Select");
-    }, 1000);
+    }, 2000);
     });
 
 /// Load and Launch UFC App    
@@ -117,7 +117,7 @@ $("UFC").click(function(){
     $.post(IPADDR + "/launch/11?contentID=1457");
     setTimeout(function() {
     $.post(IPADDR + "/keypress/Select");
-    }, 1000);
+    }, 2000);
     });
 
 /// Load and Launch YouTube App    
@@ -125,7 +125,7 @@ $("YouTube").click(function(){
     $.post(IPADDR + "/launch/11?contentID=837");
     setTimeout(function() {
     $.post(IPADDR + "/keypress/Select");
-    }, 1000);
+    }, 2000);
     });
 
 /// Load and Launch Amazon App    
@@ -133,7 +133,7 @@ $("Amazon").click(function(){
     $.post(IPADDR + "/launch/11?contentID=13");
     setTimeout(function() {
     $.post(IPADDR + "/keypress/Select");
-    }, 1000);
+    }, 2000);
     });
 
 
