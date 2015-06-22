@@ -5,8 +5,7 @@ Screenshot: http://imgur.com/hAJOEYA
 
 ## Setup
 1. Copy 'roku.html' to a server on your home network.
-2. Open roku.latest and enter your Roku's IP in the IPADDR variable
-* var IPADDR = "http://YOURIPHERE:8060";
+2. Open roku.latest and enter your Roku's IP in the IPADDR variable * var IPADDR = "http://YOURIPHERE:8060";
 3. Open 'roku.html' on a web browser and enjoy.
 
 ## Additional Information and Notes
