@@ -18,7 +18,7 @@ Screenshot: http://imgur.com/hAJOEYA
 
 ## Tasks
 * Use API text search functionality (would be great on mobile w/ Swype).
-* Move the css to a separate file
+* Move the css, html, and js/jq to a separate file
 * Make pretty
 
 ## Changelog
