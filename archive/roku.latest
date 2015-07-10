@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <div align="center"><hr><h1><b>Roku Remote</b></h1><hr></div>
+  <meta charset="utf-8">
+  <title>Roku Remote</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <style>
+
+.remote {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-shadow: 0 1px 0 #fff;
+  color: #2a2a2a;
+  background: #fafafa;  
+  background-image: linear-gradient(top, #fff, #eaeaea, #fff);
+}
+
+.remote td {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 1px 0 white;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/*Body*/
+.remote tbody td {
+  text-align: center;
+  font: normal 18px Verdana, Arial, Helvetica;
+  width: 150px;
+}
+
+  </style>
+
+</head>
+<body>
+ 
+<center>
+<div class="remote"><table>
+    <td class="centerText"><Back>Back</Back></td>
+    <td class="centerText" style="font: normal 50px Verdana, Arial, Helvetica;"><up>^</up></td>
+    <td class="centerText"><home>Home</home></td>
+  </tr>
+  <tr>
+    <td class="centerText" style="font: normal 50px Verdana, Arial, Helvetica;"><left><</left></td>
+    <td class="centerText"><Sel>Select</Sel></td>
+    <td class="centerText" style="font: normal 50px Verdana, Arial, Helvetica;"><right>></right></td>
+  </tr>
+  <tr>
+    <td class="centerText"><a href="http://tv">TV</a></td>
+    <td class="centerText" style="font: normal 50px Verdana, Arial, Helvetica;"><down>v</down></td>
+    <td class="centerText"><info>Info</info></td>
+  </tr>
+  <tr>
+    <td class="centerText"><Rew><<</Rew></td>
+    <td class="centerText"><play>> ||</play></td>
+    <td class="centerText"><Fwd>>></Fwd></td>
+  </tr>
+  <tr>
+    <td class="centerText"><Pandora>Pandora</Pandora></td>
+    <td class="centerText"><Netflix>Netflix</Netflix></td>
+    <td class="centerText"><UFC>UFC</UFC></td>
+  </tr>
+  <tr>
+    <td class="centerText"><YouTube>YouTube</Youtube></td>
+    <td class="centerText"><></></td>
+    <td class="centerText"><Amazon>Amazon</Amazon></td>
+  </tr>
+</table></div>
+</center>
+
+<script>
+
+var IPADDR = "http://192.168.1.9:8060";
+
+$("home").click(function(){$.post(IPADDR + "/keypress/home");});
+$("left").click(function(){$.post(IPADDR + "/keypress/left");});
+$("right").click(function(){$.post(IPADDR + "/keypress/right");});
+$("Rew").click(function(){$.post(IPADDR + "/keypress/Rev");});
+$("Fwd").click(function(){$.post(IPADDR + "/keypress/Fwd");});
+$("Play").click(function(){$.post(IPADDR + "/keypress/Play");});
+$("Sel").click(function(){$.post(IPADDR + "/keypress/Select");});
+$("Down").click(function(){$.post(IPADDR + "/keypress/Down");});
+$("Up").click(function(){$.post(IPADDR + "/keypress/Up");});
+$("Back").click(function(){$.post(IPADDR + "/keypress/Back");});
+$("Info").click(function(){$.post(IPADDR + "/keypress/Info");});
+$("Backspace").click(function(){$.post(IPADDR + "/keypress/Backspace");});
+$("Search").click(function(){$.post(IPADDR + "/keypress/Search");});
+$("Enter").click(function(){$.post(IPADDR + "/keypress/Enter");});
+
+/// Load and Launch Pandora App 
+$("Pandora").click(function(){
+    $.post(IPADDR + "/launch/11?contentID=28"); 
+    setTimeout(function() {
+    $.post(IPADDR + "/keypress/Select");
+    }, 2000);  
+    });
+
+/// Load and Launch Netflix App    
+$("Netflix").click(function(){
+    $.post(IPADDR + "/launch/11?contentID=12");
+    setTimeout(function() {
+    $.post(IPADDR + "/keypress/Select");
+    }, 2000);
+    });
+
+/// Load and Launch UFC App    
+$("UFC").click(function(){
+    $.post(IPADDR + "/launch/11?contentID=1457");
+    setTimeout(function() {
+    $.post(IPADDR + "/keypress/Select");
+    }, 2000);
+    });
+
+/// Load and Launch YouTube App    
+$("YouTube").click(function(){
+    $.post(IPADDR + "/launch/11?contentID=837");
+    setTimeout(function() {
+    $.post(IPADDR + "/keypress/Select");
+    }, 2000);
+    });
+
+/// Load and Launch Amazon App    
+$("Amazon").click(function(){
+    $.post(IPADDR + "/launch/11?contentID=13");
+    setTimeout(function() {
+    $.post(IPADDR + "/keypress/Select");
+    }, 2000);
+    });
+
+
+
+
+
+
+</script>
+
+ 
+</body>
+</html>
