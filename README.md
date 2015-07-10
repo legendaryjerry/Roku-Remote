@@ -3,6 +3,8 @@ Simple, mobile-friendly Roku remote webUI using jQuery.
 
 Note: There is a free Roku app for both Android and iOS. This was created as a POC and will be used with another project.
 
+! Mainline currently broken while I pretty things up. (using boilerplate, adding functionality)
+
 Screenshot: http://imgur.com/hAJOEYA
 
 ## Setup
