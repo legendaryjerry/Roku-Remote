@@ -5,7 +5,7 @@ Note: There is a free Roku app for both Android and iOS. This was created as a P
 
 ! Mainline currently broken while I pretty things up. (using boilerplate, adding functionality)
 
-Screenshot: http://imgur.com/hAJOEYA
+Screenshot: https://s3.amazonaws.com/uploads.hipchat.com/30691/229131/QkeUsU8YwAstZG6/9H3VyW.gif
 
 ## Setup
 1. Copy 'roku.html' to a server on your home network.
@@ -20,9 +20,8 @@ Screenshot: http://imgur.com/hAJOEYA
 
 ## Tasks
 * Use API text search functionality (would be great on mobile w/ Swype).
-* Move the css, html, and js/jq to a separate file
-* Make pretty
 
 ## Changelog
+* 11 JUL 2015 Made pretty, moved the css, html, and js/jq to a separate file
 * 21 JUN 2015 Use an IP variable instead of hard-coding the IP 50 times. 
 * 21 JUN 2015 Link to common Apps
