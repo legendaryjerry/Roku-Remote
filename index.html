@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Sticky Footer Template for Bootstrap</title>
+    <title>Remote Control</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,16 +17,12 @@
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer.css" rel="stylesheet">
 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
 
   <body>
-
+    <div id="scrollu"></div>
     <!-- Begin page content -->
     <div class="container">
        <ul class="rbuttons">
@@ -50,16 +46,31 @@
           <li><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></li>
        </ul>
 
-
-
+       <ul>
+         <li><span class="glyphicon glyphicon-volume-down" aria-hidden="true"></span></li>
+         <li><a href="#scrolld"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></a></li>
+         <li><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span></li>
+      </ul>
     </div>
+       <div class="spacer"></div>
 
-  <!--  <footer class="footer">
-      <div class="container">
-      </div>
-    </footer>
-  -->
-
+        <div class="list-group">
+       <a href="#" class="list-group-item active">
+         Apps 
+       </a>
+         <div id="scrolld"></div>
+         <a href="#" class="list-group-item">UFC</a>
+         <a href="#" class="list-group-item">Amazon</a>
+         <a href="#" class="list-group-item">Youtube</a>
+         <a href="#" class="list-group-item">Netflix</a>
+       </div>
+       
+ 
+       <div>
+         <ul><li>
+         <a href="#scrollu"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+         </ul></li>
+       </div>
   </body>
 </html>
 

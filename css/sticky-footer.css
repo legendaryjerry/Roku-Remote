@@ -6,8 +6,8 @@ html {
 }
 body {
   /* Margin bottom by footer height 
-  margin-bottom: 60px; */
-  background-color: lightgrey;
+  margin-bottom: 60px; 
+  background-color: lightgrey; */
 }
 .footer {
   position: absolute;
@@ -26,8 +26,8 @@ body {
 .container {
   width: auto;
   /* max-width: 680px; 
-  padding: 0 15px; */
-  padding-top: 20%
+  padding: 0 15px; 
+  padding-top: 15% */
 }
 .container .text-muted {
   margin: 20px 0;
@@ -41,4 +41,9 @@ li {
  display: inline-block;
  font-size: 60px;
  padding: 0 15px;
+}
+
+.spacer {
+    padding: 150px;
+
 }
